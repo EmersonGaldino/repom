@@ -7,7 +7,7 @@ on:
     branches: [ main ]
 
 jobs:
-  build-and-test:
+  build:
     runs-on: ubuntu-latest
 
     steps:
@@ -17,13 +17,29 @@ jobs:
       - name: Setup .NET SDK
         uses: actions/setup-dotnet@v4
         with:
-          dotnet-version: '9'  # Altere para a versão que você está usando
+          dotnet-version: '9'
 
       - name: Restore dependencies
         run: dotnet restore src/repom.galdino.sln
 
       - name: Build
         run: dotnet build src/repom.galdino.sln --configuration Release --no-restore
+
+  test:
+    runs-on: ubuntu-latest
+    needs: build   # <- Só executa se o build passar
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup .NET SDK
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '9'
+
+      - name: Restore dependencies
+        run: dotnet restore src/repom.galdino.sln
 
       - name: Run tests
         run: dotnet test src/repom.unitest/repom.unitest.csproj --configuration Release --no-build --logger "trx"

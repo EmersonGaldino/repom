@@ -2,6 +2,9 @@
 
 Este repositório contém a solução **Repom.Galdino**, uma aplicação modular em .NET com suporte a testes unitários, orquestração Docker com PostgreSQL e observabilidade via ELK (Elasticsearch, Logstash, Kibana).
 
+
+![Build & Test](https://github.com/EmersonGaldino/repom/actions/workflows/build.yml/badge.svg)
+
 ---
 
 ## 🧱 Estrutura do Projeto

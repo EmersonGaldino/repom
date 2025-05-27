@@ -1,0 +1,21 @@
+# This is a generated file. Not intended for manual editing.
+version: "3.8"
+services:
+  repom.api:
+    build:
+      context: "/Users/emersongaldino/Projects/Tests/repom.galdino/src"
+      dockerfile: "repom.application.api/Dockerfile"
+      target: "base"
+    command: []
+    entrypoint:
+    - "dotnet"
+    - "/app/bin/Debug/net9.0/repom.application.api.dll"
+    environment:
+      DOTNET_USE_POLLING_FILE_WATCHER: "true"
+    image: "repom.application.api:dev"
+    ports: []
+    volumes:
+    - "/Users/emersongaldino/Projects/Tests/repom.galdino/src/repom.application.api:/app:rw"
+    - "/Users/emersongaldino/Projects/Tests/repom.galdino/src:/src:rw"
+    - "/Users/emersongaldino/.nuget/packages:/home/app/.nuget/packages"
+    working_dir: "/app"

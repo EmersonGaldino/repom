@@ -1,0 +1,46 @@
+###
+
+GET {{host}}/api/Person
+accept: text/plain
+
+###
+###
+POST {{host}}/api/person
+Content-Type: application/json
+
+{
+  "fullName": "Emerson Galdino2",
+  "rg": "123456789",
+  "cpf": "28036319030",
+  "birthDate": "1980-05-27T01:49:25.257Z",
+  "address": {
+    "street": "Henriqueta",
+    "number": "1398",
+    "city": "Barueri",
+    "zipCode": "06401160",
+    "complement": "Apt 3",
+    "state": "SP"
+  },
+  "phones": [
+    {
+      "number": "11988624572",
+      "type": "Mobile"
+    },
+    {
+      "number": "1147071355",
+      "type": "Home"
+    }
+  ],
+  "job": {
+    "description": "Software Developer Senior",
+    "salary": 4500.00,
+    "startDate": "2025-05-27T01:49:25.257Z",
+    "department": {
+      "description": "IT"
+    }
+  }
+}
+
+###
+
+

@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "repom.application", "repom.application\repom.application.csproj", "{1F32F2AA-56D7-4537-A9C2-D921BF30C8AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "repom.bootstrapper", "repom.bootstrapper\repom.bootstrapper.csproj", "{E0115C79-73CB-4671-8E60-11489B805F84}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "repom.domain.core", "repom.domain.core\repom.domain.core.csproj", "{B0E00F32-B14B-4A8B-8ECC-DE91779B3F87}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "repom.persistence", "repom.persistence\repom.persistence.csproj", "{328A1535-EF4B-485B-AA68-5D07D05347CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "repom.application.api", "repom.application.api\repom.application.api.csproj", "{33E95CDF-9949-4BE4-A0F5-E4E5D933CA00}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "repom.utils", "repom.utils\repom.utils.csproj", "{4737234F-1EE2-446C-AB51-BE3C8CE49325}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "repom.unitest", "repom.unitest\repom.unitest.csproj", "{FA20B61A-1F26-473E-8A2F-7D45036955DC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A7C53DB1-BE1D-4C16-979B-924FD894DC3F}"
+	ProjectSection(SolutionItems) = preProject
+		compose.yaml = compose.yaml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1F32F2AA-56D7-4537-A9C2-D921BF30C8AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F32F2AA-56D7-4537-A9C2-D921BF30C8AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F32F2AA-56D7-4537-A9C2-D921BF30C8AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F32F2AA-56D7-4537-A9C2-D921BF30C8AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0115C79-73CB-4671-8E60-11489B805F84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0115C79-73CB-4671-8E60-11489B805F84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0115C79-73CB-4671-8E60-11489B805F84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0115C79-73CB-4671-8E60-11489B805F84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0E00F32-B14B-4A8B-8ECC-DE91779B3F87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0E00F32-B14B-4A8B-8ECC-DE91779B3F87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0E00F32-B14B-4A8B-8ECC-DE91779B3F87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0E00F32-B14B-4A8B-8ECC-DE91779B3F87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{328A1535-EF4B-485B-AA68-5D07D05347CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{328A1535-EF4B-485B-AA68-5D07D05347CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{328A1535-EF4B-485B-AA68-5D07D05347CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{328A1535-EF4B-485B-AA68-5D07D05347CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33E95CDF-9949-4BE4-A0F5-E4E5D933CA00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33E95CDF-9949-4BE4-A0F5-E4E5D933CA00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33E95CDF-9949-4BE4-A0F5-E4E5D933CA00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33E95CDF-9949-4BE4-A0F5-E4E5D933CA00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4737234F-1EE2-446C-AB51-BE3C8CE49325}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4737234F-1EE2-446C-AB51-BE3C8CE49325}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4737234F-1EE2-446C-AB51-BE3C8CE49325}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4737234F-1EE2-446C-AB51-BE3C8CE49325}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA20B61A-1F26-473E-8A2F-7D45036955DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA20B61A-1F26-473E-8A2F-7D45036955DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA20B61A-1F26-473E-8A2F-7D45036955DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA20B61A-1F26-473E-8A2F-7D45036955DC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

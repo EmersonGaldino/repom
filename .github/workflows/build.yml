@@ -1,10 +1,10 @@
-name: Run .NET Tests
+name: Build and Test .NET
 
 on:
   push:
-    branches: [ main, master ]
+    branches: [ main ]
   pull_request:
-    branches: [ main, master ]
+    branches: [ main ]
 
 jobs:
   build-and-test:
@@ -17,13 +17,13 @@ jobs:
       - name: Setup .NET SDK
         uses: actions/setup-dotnet@v4
         with:
-          dotnet-version: '9'  # Altere conforme sua versão
+          dotnet-version: '9'  # Altere para a versão que você está usando
 
       - name: Restore dependencies
-        run: dotnet restore
+        run: dotnet restore src/repom.galdino.sln
 
       - name: Build
-        run: dotnet build --no-restore --configuration Release
+        run: dotnet build src/repom.galdino.sln --configuration Release --no-restore
 
       - name: Run tests
-        run: dotnet test --no-build --configuration Release --logger "trx"
+        run: dotnet test src/repom.unittest/repom.unittest.csproj --configuration Release --no-build --logger "trx"

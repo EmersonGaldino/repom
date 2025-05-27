@@ -26,4 +26,4 @@ jobs:
         run: dotnet build src/repom.galdino.sln --configuration Release --no-restore
 
       - name: Run tests
-        run: dotnet test src/repom.unittest/repom.unittest.csproj --configuration Release --no-build --logger "trx"
+        run: dotnet test src/repom.unittest/repom.unitest.csproj --configuration Release --no-build --logger "trx"

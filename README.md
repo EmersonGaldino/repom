@@ -8,7 +8,7 @@ Este repositório contém a solução **Repom.Galdino**, uma aplicação modular
 
 ```
 src/
-├── repom.application          # Lógica de aplicação
+├── repom.application          # Acesso a infraestrutura que aplicacao precisar
 ├── repom.application.api      # API principal
 ├── repom.bootstrapper         # Configuração de injeção de dependências
 ├── repom.domain.core          # Entidades e contratos de domínio

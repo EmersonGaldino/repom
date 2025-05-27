@@ -13,7 +13,6 @@ src/
 ├── repom.bootstrapper         # Configuração de injeção de dependências
 ├── repom.domain.core          # Entidades e contratos de domínio
 ├── repom.persistence          # Acesso a dados
-├── repom.presentation.api     # Camada de apresentação
 ├── repom.unitest              # Testes unitários
 ├── repom.utils                # Utilitários
 ├── repom.galdino.sln          # Solution file
